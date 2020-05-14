@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:text="DATA DIRI MAHASISWA"
+        android:textSize="27dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/header2"
+        android:text="Modul 6 Pemrograman Mobile"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#9affffff"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/shape_button"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="130dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="5dp">
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/textnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NAMA MAHASISWA"
+            android:textColorHint="#ffffff"
+            android:theme="@style/EditScreenTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textjurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="JURUSAN"
+            android:textColorHint="#ffffff"
+            android:theme="@style/EditScreenTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextJurusan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EMAIL"
+            android:textColorHint="#ffffff"
+            android:theme="@style/EditScreenTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_below="@id/buttonAdd"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFFFF"
+            android:text="Tambah Mahasiswa"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/buttonAdd" />
+
+        <Button
+            android:layout_below="@id/buttonView"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Daftar Mahasiswa"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:id="@+id/buttonView" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
